@@ -28,7 +28,10 @@ module PagseguroGateway
     end
 
     def default_headers
-      { 'Content-Type' => 'application/json' }
+      { 
+				'Content-Type' => 'application/json',
+				'x-api-version' => "4.0"
+			}
     end
 
   end
